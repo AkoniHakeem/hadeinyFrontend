@@ -1,3 +1,4 @@
+import { useTitle } from "ahooks";
 import React, { useState } from "react";
 import { useRouteMatch } from "react-router-dom";
 import config from '../../config'
@@ -7,7 +8,7 @@ const { default: ProductCard } = require("../product-card/productCard");
 
 const CollectionPage = (props) => {
     let {path} = useRouteMatch();
-    console.log(path);
+    useTitle(`${path.substring(1)} - hadeiny`, {restoreOnUnmount: true});
     let requestUrl = `${config.backendUrl}/api/v1/products/${path}`
     const request = new Request(requestUrl, {
         method: "GET"

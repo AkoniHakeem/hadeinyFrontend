@@ -23,7 +23,7 @@ const Cart = (props) => {
                 <div>
                     <h3>Please, reviwe your cart items</h3>
                 </div>
-                <ul className="cart-list">
+                <ul className="card-shadowed cart-list">
                 {
                     appContext.cartContext.cart.items.map(prodObject => {
                         return (
@@ -36,11 +36,11 @@ const Cart = (props) => {
                                     <label><strong>N</strong>{prodObject.product.price * prodObject.quantity}</label>
                                 </li>
                         )
-                    })
+                    }) 
                 }
                 </ul>
                 <Link to="/checkout">
-                <button className="cart-btn-submit">Place Order</button>
+                <button className="btn-primary cart-btn-submit">Place Order</button>
                 </Link>
             </div>
 

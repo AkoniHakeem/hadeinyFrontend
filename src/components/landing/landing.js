@@ -8,7 +8,6 @@ import Cart from '../cart/cart';
 import React from "react";
 
 const Page = (props) => {
-
         const sideBarRef = useRef();
         const openSideBar = (e) => {
             sideBarRef.current.open();

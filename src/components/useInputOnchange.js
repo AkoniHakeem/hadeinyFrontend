@@ -1,18 +1,25 @@
 import { useState } from "react"
 
-const UseInputOnchange = function() {
-    const [value, setValue] = useState("...");
-    const [error, setError] = useState(undefined);
+const useInputOnchange = function(placeholder) {
+    let [value, setValue] = useState("");
+    let [error, setError] = useState(undefined);
 
-    clearInput = ()=>{
+    let clearInput = ()=>{
         setValue("");
     }
 
-    bindForm = {
-        onChange: e => {
+    let bindform = {
+        onChange: function(e) {
+            console.log("this is the value", e.target.value)
             setValue(e.target.value);
-        }
+        },
+        value,
+        placeholder,
+        type: "text"
     }
-
-    return [value, error, bindForm, clearInput]
+    const results = []
+    results.push(value, error, bindform, clearInput)
+    return  results
 }
+
+export default useInputOnchange

@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom"
 import "./authNav.css"
 
 const AuthNav = (props) => {
     return(
         <>
-            <button className="auth-nav-button">Sign Up</button>
-            <button className="auth-nav-button">Log In</button>
+        <Link to="/signup"> <button className="auth-nav-button">Sign Up</button></Link>
+        <Link to="/login"><button className="auth-nav-button">Log In</button></Link>
         </>
     )
 }

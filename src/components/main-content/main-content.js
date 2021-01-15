@@ -7,6 +7,10 @@ import CollectionPage from '../collections/collectionPage'
 import ProductDetailsPage from '../collections/productDetailsPage/productDetailsPage'
 import config from '../../config'
 import Cart from '../cart/cart'
+import Checkout from '../cart/checkout'
+import Thanks from '../cart/thanks'
+import Signup from '../authNav/signup'
+import Login from '../authNav/login'
 
 const MainContent = (props) => {
     let requestUrl = config.backendUrl+"/api/v1/collections"
@@ -40,6 +44,18 @@ const MainContent = (props) => {
                 }
                 <Route path="/cart">
                     <Cart size="big"/>
+                </Route>
+                <Route path="/checkout">
+                    <Checkout/>
+                </Route>
+                <Route path="/thank-you-for-your-order">
+                    <Thanks/>
+                </Route>
+                <Route path="/signup">
+                    <Signup/>
+                </Route>
+                <Route path="/login">
+                    <Login/>
                 </Route>
             </Switch>
         </div>

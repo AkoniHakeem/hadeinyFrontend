@@ -4,7 +4,6 @@
     border: none;
     outline-offset: .2rem ;
     cursor: pointer;
-
 }
 
 .cartEmpty {
@@ -22,10 +21,6 @@
 
 .cart-list {
     list-style: none;
-    color: var(--text-color);
-    width: 22.5rem;
-    /* border: .1rem solid #002e6b; */
-    box-shadow: .1rem 0 .4rem .4rem #a0aab8;
 }
 
 .cart-list-item-row {
@@ -44,10 +39,6 @@
 }
 
 .cart-btn-submit{
-    padding: 1rem;
-    border-radius: .5rem;
-    background-color: #002e6b;
-    color: whitesmoke;
     position: absolute;
     right: .1rem;
 }
