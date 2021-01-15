@@ -9,7 +9,7 @@ const { default: ProductCard } = require("../product-card/productCard");
 const CollectionPage = (props) => {
     let {path} = useRouteMatch();
     useTitle(`${path.substring(1)} - hadeiny`, {restoreOnUnmount: true});
-    let requestUrl = `${config.backendUrl}/api/v1/products/${path}`
+    let requestUrl = `${config.hadeiny_BACKENDURL}/api/v1/products/${path}`
     const request = new Request(requestUrl, {
         method: "GET"
     })

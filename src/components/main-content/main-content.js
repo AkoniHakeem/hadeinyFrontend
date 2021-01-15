@@ -16,7 +16,7 @@ const MainContent = (props) => {
     console.log(process.env);
     console.log(config)
     console.log(process.env.Hadeiny_BackendUrl)
-    let requestUrl = config.backendUrl+"/api/v1/collections"
+    let requestUrl = config.hadeiny_BACKENDURL+"/api/v1/collections"
     const request = new Request(requestUrl, {
         method: "GET"
     })
