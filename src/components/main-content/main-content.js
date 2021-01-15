@@ -14,6 +14,7 @@ import Login from '../authNav/login'
 
 const MainContent = (props) => {
     let requestUrl = config.backendUrl+"/api/v1/collections"
+    console.log(process.env)
     const request = new Request(requestUrl, {
         method: "GET"
     })
