@@ -9,7 +9,7 @@ const ProductDetailsPage = function () {
     const {productName, productId}= useParams();
     const [product, setproduct] = useState({})
     console.log(useParams())
-    const requestUrl = `${config.backendUrl}/api/v1/products/one/${productId}`
+    const requestUrl = `${config.hadeiny_BACKENDURL}/api/v1/products/one/${productId}`
     const request = new Request(requestUrl, {
         method:"GET"
     })

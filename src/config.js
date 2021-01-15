@@ -7,10 +7,10 @@ const config = {}
 
 config.environments = {
     "development" : {
-        backendUrl: process.env.backendUrl || "http://localhost:3001"
+        hadeiny_BACKENDURL: process.env.backendUrl || "http://localhost:3001"
     },
     "staging" : {
-        backendUrl: process.env.backendUrl || "http://localhost:3001"
+        hadeiny_BACKENDURL: process.env.backendUrl || "http://localhost:3001"
     },
     "production" : { // We should set the https port always here
         hadeiny_BACKENDURL: process.env.HADEINY_BACKEND_URL || "https://hadenyshop-a5qf6.ondigitalocean.app"
