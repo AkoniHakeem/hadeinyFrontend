@@ -13,7 +13,7 @@ config.environments = {
         backendUrl: process.env.backendUrl || "http://localhost:3001"
     },
     "production" : { // We should set the https port always here
-        backendUrl: process.env.backendUrl
+        backendUrl: process.env.Hadeiny_BackendUrl
     }
 }
 
