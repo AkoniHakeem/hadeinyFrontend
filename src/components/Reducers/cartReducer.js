@@ -1,6 +1,6 @@
 
 const CartReducer = function(cart, action) {
-    console.log("reducer called with action ", action.type)
+    console.log("reducer called with action - ", action.type)
     const reducerFunction = {
         addToCart(){
             console.log("cart initial ",cart)
@@ -40,7 +40,11 @@ const CartReducer = function(cart, action) {
         },
 
         emptyCart(){
-
+            localStorage.removeItem("cart");
+            return {
+                count: 0,
+                items: []
+            }
         },
 
         default() {

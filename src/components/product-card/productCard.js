@@ -14,7 +14,7 @@ const ProductCard = (props) => {
             </div>
             <div>
                 <ProductDetail name={props.productName} description={props.productDescription} price={props.productPrice} />
-                <ProductActions />
+                <ProductActions product={props.product} quantityArray={[1,2,3,4]} clickId={props.productId}/>
             </div>
         </div>
     )

@@ -1,11 +1,15 @@
-import { useReducer, useState } from "react";
+import { useLocalStorageState } from "ahooks";
+import { useEffect, useReducer, useState } from "react";
 import CartReducer from "../Reducers/cartReducer";
 import { AppContext } from "./appContext";
 
 const AppContextProvider = function (props){
-    const [cart, cartDispatch] = useReducer(CartReducer, { count: 0,items: []})
-
-
+    const cart_id = Date.now();
+    const [cart, setCart] = useLocalStorageState("cart", {cart_id: cart_id, count: 0,items: []})
+    const [_cart, cartDispatch] = useReducer(CartReducer, cart);
+    useEffect(() => {
+        setCart(_cart);
+    }, [_cart])
     return(
         <AppContext.Provider
         value={
@@ -14,6 +18,8 @@ const AppContextProvider = function (props){
                     cart: {...cart},
                     cartDispatch
                 },
+                
+                eventContext: {}
 
             }
         }
