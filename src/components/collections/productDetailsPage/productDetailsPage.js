@@ -5,6 +5,7 @@ import config from '../../../config'
 import ProductActions from "../../product-card/productActions/productActons"
 import ProductDetail from "../../product-card/productDetail/productDetail"
 import "./productDetailsPage.css"
+import { getArray } from "../../helpers"
 const ProductDetailsPage = function () {
     const {productName, productId}= useParams();
     const [product, setproduct] = useState({})
@@ -17,13 +18,6 @@ const ProductDetailsPage = function () {
         setproduct(product);
         console.log(product);
     })
-    const getQuantityOptions = function () {
-        let quantityArray = [];
-        for (let index = 1; index <= 20; index++) {
-            quantityArray.push(index)
-        }
-        return quantityArray;
-    }
     return(
         <div className="product-details-page-container">
             {/* image area */}
@@ -37,7 +31,7 @@ const ProductDetailsPage = function () {
                 description={product.description}/>
             </div>
             <div className="product-action-style">
-            <ProductActions product={product} quantityArray={getQuantityOptions()}/>
+            <ProductActions product={product} quantityArray={getArray(product.quantity, 10)}/>
             </div>
             {/* more details area */}
             <div className="more-details-area">

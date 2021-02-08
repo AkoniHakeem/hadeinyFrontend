@@ -2,7 +2,6 @@ import { useEventEmitter, usePersistFn, useTitle } from "ahooks";
 import React, { useCallback, useEffect, useState } from "react";
 import { useRouteMatch } from "react-router-dom";
 import config from '../../config'
-import useCommune from "../useCommune";
 import useFetch from "../useFetchFrom";
 const { default: ProductCard } = require("../product-card/productCard");
 
@@ -18,12 +17,17 @@ const CollectionPage = (props) => {
 
     const [products, setProducts] = useState([])
 
-        useFetch(request, (_products) => {
-            setProducts(_products)
-        })
+    useFetch(request, (_products) => {
+        setProducts(_products)
+    })
+    // const commune = useCommune("click-event");
+    // const onAddToCartClicked = (quantity) => {
+    //     console.log("add to cart clicked with the quantity - ", quantity)
+    // }
     return(
         <div className="main-content">
             {products.map(prod => {
+                //commune.subscribe(onAddToCartClicked);
                 return <ProductCard product={prod} productImage={prod.imageLocation} key={prod._id} productName={prod.name} productId={prod._id} productDescription={prod.description} productPrice={prod.price}/>
             })}
         </div>

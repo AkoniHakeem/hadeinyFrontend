@@ -1,38 +1,80 @@
 import { useContext, useState } from 'react'
-import useCommune from '../../useCommune';
 import { AppContext } from '../../context/appContext';
 import './productActions.css'
 
 const ProductActions = (props) => {
     const appContext = useContext(AppContext)
-    let [selection, setSelection] = useState(1);// initialization helps to ensure there is always 
-                                    //cart count of 1 to add when the select tags are not available
-    const productQuantityToAdd = Number(selection)
+    const cartContext = appContext.cartContext;
+    const cartDispatch = cartContext.cartDispatch;
+    const [showAddRemoveButton, setShowAddRemoveButton] = useState(false);
+    let [inputIsInEdit, setInputIsInEdit] = useState(false);
+    let [userManualEntry, setUserManualEntry] = useState(1);
+    const findInContext = function(productId) {
+        return cartContext.cart.items.find(prodObject => prodObject.product._id === productId)
+    }
+    const productCartQuantity = findInContext(props.product._id)? findInContext(props.product._id).quantity : 0;
+    const [inputType, setInputType] = useState("text");
     const addToCart = function () {
-        setSelection(selection)
-        const cartDispatch = appContext.cartContext.cartDispatch
-        cartDispatch({type:"addToCart", payload:{count: productQuantityToAdd, product: {...props.product}}})
+        if(productCartQuantity > 0) { // if this product exist in cart
+            setShowAddRemoveButton(true)
+            setInputType("button");
+            setUserManualEntry(1)
+            setInputIsInEdit(false);
+            console.log(findInContext(props.product._id))
+        }
+        cartDispatch({type:"addToCart", payload:{count: userManualEntry, product: {...props.product}}})
     }
 
-    const setNewSelection = function (e) {
-        setSelection(e.target.value)
+    const removeFromCart = function() {
+        let quantityToRemove = userManualEntry;
+        cartDispatch({type: "removeFromCart", payload: {count: quantityToRemove, product: {...props.product}}})
+        setTimeout(() => {
+            if(findInContext(props.product._id) && findInContext(props.product._id).quantity <= 0) {
+                setShowAddRemoveButton(false)
+            }
+        }, 0);
+
     }
+    
         
     return (
+
         <div>
-            {props.quantityArray? 
-            <select onChange={(e) => setNewSelection(e)}>
-                {props.quantityArray.map(
-                    (item, index) => {
-                        return(
-                            <option key={index} value={item}>{item}</option>
-                        )
-                    }
-                )}
-            </select> : ''
+            {
+                showAddRemoveButton ? 
+                <div>
+                    <button onClick={removeFromCart.bind(this)}>-</button>
+                    <input value={inputIsInEdit? userManualEntry : productCartQuantity } 
+                    onClick={(e) => {setInputType("text"); setInputIsInEdit(true); setUserManualEntry(productCartQuantity)} } 
+                    onChange={(e) => setUserManualEntry(e.target.value)} type={inputType}
+                     />
+                    <button onClick={addToCart.bind(this)}>+</button>
+                </div> 
+                :
+                <div>
+                    <button className="product-action-btn" onClick={addToCart.bind(this)}>
+                        {productCartQuantity > 0 ? 
+                    findInContext(props.product._id).quantity 
+                    : 
+                    "Add To Cart"}
+                    </button>
+                </div>
             }
-            <button className="product-action-btn" onClick={addToCart.bind(this)}>Add To Cart</button>
         </div>
+        // <div>
+        //     {props.quantityArray? 
+        //     <select onChange={(e) => setNewSelection(e)}>
+        //         {props.quantityArray.map(
+        //             (item, index) => {
+        //                 return(
+        //                     <option key={index} value={item}>{item}</option>
+        //                 )
+        //             }
+        //         )}
+        //     </select> : ''
+        //     }
+        //     <button className="product-action-btn" onClick={addToCart.bind(this)}>Add To Cart</button>
+        // </div>
     )
 }
 
