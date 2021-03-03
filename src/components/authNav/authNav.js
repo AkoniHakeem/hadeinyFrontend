@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import { useClickAway } from "ahooks";
 import { useRef, useState } from "react";
@@ -40,6 +41,16 @@ const AuthNav = (props) => {
                 <Link to="/login"><button className="auth-nav-button">Log In</button></Link>
             </>
         }
+=======
+import { Link } from "react-router-dom"
+import "./authNav.css"
+
+const AuthNav = (props) => {
+    return(
+        <>
+        <Link to="/signup"> <button className="auth-nav-button">Sign Up</button></Link>
+        <Link to="/login"><button className="auth-nav-button">Log In</button></Link>
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
         </>
     )
 }

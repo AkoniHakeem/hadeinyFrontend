@@ -5,6 +5,7 @@
     border: none;
     outline-offset: .2rem ;
     cursor: pointer;
+<<<<<<< HEAD
     height: 1.5rem;
     position: relative;
     display: flex;
@@ -47,4 +48,6 @@
     flex-shrink: 1;
     align-items: center;
     padding: 1rem 0 1rem 0;
+=======
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
 }

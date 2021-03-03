@@ -1,7 +1,10 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { AppContext } from '../context/appContext'
+<<<<<<< HEAD
 import useCart from '../hooks/useCart'
+=======
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
 import './cart.css'
 import CartList from './cartList/cartList'
 
@@ -9,8 +12,12 @@ import CartList from './cartList/cartList'
 // this is going to subscribe to  a cart context where it is able to read the cart values
 const Cart = (props) => {
     const appContext = useContext(AppContext)
+<<<<<<< HEAD
     const [cart] = useCart();
     let cartCount = cart.count /* appContext.cartContext.cart.count; */
+=======
+    let cartCount = appContext.cartContext.cart.count;
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
     const classNames = ["cart-btn"];
     cartCount ? classNames.push("cartNonEmpty") : classNames.push("cartEmpty")
     return(
@@ -31,7 +38,11 @@ const Cart = (props) => {
                     cartCount > 0 ? 
                     appContext.cartContext.cart.items.map(prodObject => {
                         return (
+<<<<<<< HEAD
                                 <CartList key={prodObject.product._id.toString() + prodObject.product.name} productObject={prodObject}/>
+=======
+                                <CartList key={prodObject.product._id.toString() + prodObject.product.name} productObject={prodObject} quantity={prodObject.quantity}/>
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
                         )
                     }) : 
                     <h4>Cart is empty</h4>

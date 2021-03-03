@@ -1,5 +1,6 @@
 // signup functionalities
 // signup form
+<<<<<<< HEAD
 
 import { useEffect, useState } from "react";
 import { Redirect, useLocation } from "react-router-dom"
@@ -113,6 +114,19 @@ import "./authNav.css"
                     })}
 
                     {/* <div className="label-input-group">
+=======
+    // name, email, phone, password ... others to come
+    const Signup = function(){
+        return(
+            <div className="card-shadowed">
+                <div className="opening-brief"><p>Please, enter your details</p></div>
+                <form className="form-primary">
+                    <div className="label-input-group">
+                        <label>First Name</label>
+                        <input className="input-medium"/>
+                    </div>
+                    <div className="label-input-group">
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
                         <label>Last Name</label>
                         <input className="input-medium"/>
                     </div >
@@ -132,12 +146,19 @@ import "./authNav.css"
                     <div className="label-input-group">
                         <label>Confirm Password</label>
                         <input className="input-medium"/>
+<<<<<<< HEAD
                     </div> */}
                     <button className="btn-primary">Signup</button>
                 </form>
             </div>
             </div>
 
+=======
+                    </div>
+                    <button className="btn-primary">Signup</button>
+                </form>
+            </div>
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
         )
     }
 

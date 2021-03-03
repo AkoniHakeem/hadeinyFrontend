@@ -5,7 +5,11 @@ import {AppContext} from "../../context/appContext"
 const CartList = function(props) {
     const [quantitySelected, setQuantitySelected] = useState(0)
     const cartContext = useContext(AppContext).cartContext;
+<<<<<<< HEAD
     const quantityArray = getArray(props.productObject.product.quantity, 12)
+=======
+    const quantityArray = getArray(props.productObject.quantity, 12)
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
     const optionsArray = [] 
     for(const i of quantityArray ) {
         if (i === 10) {

@@ -18,6 +18,7 @@
 - for certain evens from each other
 - this way we can let the parent handle the most important tasks
 - only pass along what the child simply needs
+<<<<<<< HEAD
 - this is going to be done using event pattern
 
 ## to facilitate authentication
@@ -55,3 +56,6 @@
         - display: flex
         - direction: row wrap to let items break
         - we can use a center value to alignment or justification
+=======
+- this is going to be done using event pattern
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863

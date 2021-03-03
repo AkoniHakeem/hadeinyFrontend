@@ -16,9 +16,15 @@ const ProductActions = (props) => {
     const [inputType, setInputType] = useState("text");
     const addToCart = function () {
         if(productCartQuantity > 0) { // if this product exist in cart
+<<<<<<< HEAD
             setShowAddRemoveButton(true);
             setInputType("button");
             setUserManualEntry(1);
+=======
+            setShowAddRemoveButton(true)
+            setInputType("button");
+            setUserManualEntry(1)
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
             setInputIsInEdit(false);
             console.log(findInContext(props.product._id))
         }

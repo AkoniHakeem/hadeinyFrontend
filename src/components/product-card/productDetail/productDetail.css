@@ -1,13 +1,22 @@
 .product-details {
+<<<<<<< HEAD
     color: var(--color);
+=======
+    color: rgb(0, 0, 14);
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
     font-weight: 400;
     font-size: .8rem;
     width: 100%
 }
 
 .product-price {
+<<<<<<< HEAD
     color: var(--color);
     display: block;
+=======
+    display: block;
+    color: rgb(3, 1, 17);
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
     margin: .5rem 0;
     font-weight: bold;
 }

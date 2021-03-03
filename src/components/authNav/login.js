@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Link, Redirect, useLocation } from "react-router-dom"
 import useAuth from "../hooks/useAuth";
 import useInputOnchange from "../hooks/useInputOnchange";
@@ -69,11 +70,28 @@ const Login = function() {
                 <div>
                     <label>Password</label>
                     <input {...bindPassword} type="password"/>
+=======
+const Login = function() {
+    return(
+        <div className="card-shadowed">
+            <div className="opening-brief"><p>Please, enter your login details</p></div>
+            <form className="form-primary">
+                <div>
+                    <label>Phone</label>
+                    <input />
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input />
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
                 </div>
                 <button className="btn-primary">Login</button>
             </form>
         </div>
+<<<<<<< HEAD
         </div>
+=======
+>>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
     )
 }
 
