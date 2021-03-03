@@ -1,0 +1,24 @@
+0000000000000000000000000000000000000000 c9ea1397d15485599613dc90f72956768b90c61d AkoniHakeem <akozymayor@gmail.com> 1605782692 +0100	commit (initial): Initialize project using Create React App
+c9ea1397d15485599613dc90f72956768b90c61d 6c1d2ca021dbbfe62d6fce210fb41477e47f6d54 AkoniHakeem <akozymayor@gmail.com> 1609830070 +0100	commit: added new routes components
+6c1d2ca021dbbfe62d6fce210fb41477e47f6d54 82cb3e64fb1c0483cce3472dc98ac02da58a6025 AkoniHakeem <akozymayor@gmail.com> 1609831153 +0100	commit: removed config
+82cb3e64fb1c0483cce3472dc98ac02da58a6025 86592126be7d0762d967d06a8fd3e6f5acd6f5c7 AkoniHakeem <akozymayor@gmail.com> 1609833044 +0100	commit: commit again
+86592126be7d0762d967d06a8fd3e6f5acd6f5c7 f2ba98e773dec113303ba1800b4792488488e1df AkoniHakeem <akozymayor@gmail.com> 1609833176 +0100	commit: commit refresh
+f2ba98e773dec113303ba1800b4792488488e1df 3d6dbeb1777fba55895373be1871c6d2813e19c9 AkoniHakeem <akozymayor@gmail.com> 1610695898 +0100	commit: commit for publish
+3d6dbeb1777fba55895373be1871c6d2813e19c9 4cc4a4e57acce2f29f8b68d36f05b2e9dffba7e4 AkoniHakeem <akozymayor@gmail.com> 1610695956 +0100	commit: added checkout and thanks
+4cc4a4e57acce2f29f8b68d36f05b2e9dffba7e4 79dbe16c6ae27f3da48d4ef2fc16738fc4158fd4 AkoniHakeem <akozymayor@gmail.com> 1610702707 +0100	commit: added config
+79dbe16c6ae27f3da48d4ef2fc16738fc4158fd4 af33b4fe150e543580abeb248d4341dee932e16b AkoniHakeem <akozymayor@gmail.com> 1610702828 +0100	commit: deleted build files
+af33b4fe150e543580abeb248d4341dee932e16b 241fbc7d87316191234b4a49ce911f96b8098a35 AkoniHakeem <akozymayor@gmail.com> 1610704262 +0100	commit: updated start command
+241fbc7d87316191234b4a49ce911f96b8098a35 e8720e02449f43fcb84e4922cba8f61cc8396633 AkoniHakeem <akozymayor@gmail.com> 1610705041 +0100	commit: added logs
+e8720e02449f43fcb84e4922cba8f61cc8396633 5dcb5880e421384a61bf201e2a6779b0ca724a5c AkoniHakeem <akozymayor@gmail.com> 1610705864 +0100	commit: added logs for config
+5dcb5880e421384a61bf201e2a6779b0ca724a5c 392137acd9d08934e6a26ee32bc71738391f84b6 AkoniHakeem <akozymayor@gmail.com> 1610706556 +0100	commit: added logs for config--
+392137acd9d08934e6a26ee32bc71738391f84b6 8c0689df5f58a91b2093f1564605c005f5f514e2 AkoniHakeem <akozymayor@gmail.com> 1610706969 +0100	commit: added logs for config----
+8c0689df5f58a91b2093f1564605c005f5f514e2 a1558a8840e29307072bc5354849e59781f57373 AkoniHakeem <akozymayor@gmail.com> 1610707445 +0100	commit: updated backend url
+a1558a8840e29307072bc5354849e59781f57373 5a0b6e9a44870c16970dcbdaec09ded3e0dc3429 AkoniHakeem <akozymayor@gmail.com> 1610707989 +0100	commit: swapped backend url
+5a0b6e9a44870c16970dcbdaec09ded3e0dc3429 ff928cde0a9646c31368782c315cf1af06516402 AkoniHakeem <akozymayor@gmail.com> 1610708841 +0100	commit: swapped backend url--
+ff928cde0a9646c31368782c315cf1af06516402 1aad174735bb22fd1ebaae181d3011074d972dba AkoniHakeem <akozymayor@gmail.com> 1610710601 +0100	commit: added static files
+1aad174735bb22fd1ebaae181d3011074d972dba 2e82a2d0fa54c73f2dcf54612c017436159ff5dc AkoniHakeem <akozymayor@gmail.com> 1610728851 +0100	commit: corrected pageDetails
+2e82a2d0fa54c73f2dcf54612c017436159ff5dc 63315f13fc0dea5d313397a25a85f6a2a7a7d268 AkoniHakeem <akozymayor@gmail.com> 1611009609 +0100	commit: add useCommune
+63315f13fc0dea5d313397a25a85f6a2a7a7d268 e56cbabb493771e3d5d00bdd1d6bec948820c863 AkoniHakeem <akozymayor@gmail.com> 1612795888 +0100	commit: added cartList and updates for productAction
+e56cbabb493771e3d5d00bdd1d6bec948820c863 27f7590c1d37f5f43f6bdaafb57ed2090fdec965 AkoniHakeem <akozymayor@gmail.com> 1613920604 +0100	commit: implemented login, cart functionality ...
+0000000000000000000000000000000000000000 7d9b8b7f1ffd344a5772620a34640b30f33afb78 AkoniHakeem <akozymayor@gmail.com> 1614779471 +0100	commit (initial): implemented cart processing with server, auth, and styling for advance uses like theming and responsiveness
+0000000000000000000000000000000000000000 74aea37fed2b6b45555effccc77ef42907479c6f AkoniHakeem <akozymayor@gmail.com> 1614780561 +0100	commit (initial): implemented cart processing with backend, auth and styling for advance uses like theming and responsiveness
