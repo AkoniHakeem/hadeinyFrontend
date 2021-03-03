@@ -22,11 +22,7 @@
 }
 
 .side-bar-header {
-<<<<<<< HEAD
     background-color: var(--selected);
-=======
-    background-color: #06326b;
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
     height: 4.6rem;
     position: relative;
 }
@@ -68,13 +64,8 @@
     grid-row: 2/-1;
     height:100%;
     width: 100%;
-<<<<<<< HEAD
     border: .1rem solid var(--selected);
     color: var(--selected);
-=======
-    border: .1rem solid #06326b;
-    color: #06326b;
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
 }
 
 .side-bar-content {

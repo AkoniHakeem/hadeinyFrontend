@@ -1,19 +1,8 @@
 .main-content {
-<<<<<<< HEAD
     min-height: 80vh;
     display: flex;
     flex-flow: row wrap;
     flex-shrink: 1;
     flex-grow: 1;
     margin-bottom: 1rem;
-=======
-    width: 98%;
-    /* height: 80vh; */
-    margin: .5rem 0 .5rem 1.2rem;
-    display: flex;
-    /* flex-direction: row wrap; */
-    flex-flow: row wrap;
-    flex-shrink: 1;
-    flex-grow: 1;
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* .product-details-page-container{
     width: 100%;
     position: relative;
@@ -81,14 +80,3 @@
 [data-details-area="large"] {
     
 } */
-=======
-.product-details-page-container{
-    margin: 1%;
-    position: relative;
-}
-
-.product-action-style{
-    position: absolute;
-    right:2rem;
-}
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863

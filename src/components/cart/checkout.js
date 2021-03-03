@@ -1,6 +1,5 @@
 // delivery address
 import "./checkout.css"
-<<<<<<< HEAD
 import useInputOnchange from "../hooks/useInputOnchange"
 import { Link, Redirect, useLocation } from "react-router-dom"
 import { useContext, useState } from "react"
@@ -9,12 +8,6 @@ import useAuth from "../hooks/useAuth"
 import useCart from "../hooks/useCart"
 import config from "../../config"
 import useFetch from "../hooks/useFetchFrom"
-=======
-import useInputOnchange from "../useInputOnchange"
-import { Link } from "react-router-dom"
-import { useContext } from "react"
-import {AppContext} from "../context/appContext"
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
 
 // checkout / place order button
 
@@ -22,7 +15,6 @@ import {AppContext} from "../context/appContext"
 
 const Checkout = function(props) {
     const [value, error, bindform, clearInput] = useInputOnchange("Enter your delivery address")
-<<<<<<< HEAD
     const [isAuthenticated] = useAuth();
     const location = useLocation();
     const appContext = useContext(AppContext);
@@ -66,13 +58,6 @@ const Checkout = function(props) {
     }
 
 
-=======
-    const appContext = useContext(AppContext);
-    console.log(JSON.stringify(bindform))
-    const checkout = function (){
-        appContext.cartContext.cartDispatch({type:"emptyCart"})
-    }
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
     return (
         <div className="checkout">
             <p>Please, supply the address to forward your orders</p>
@@ -81,11 +66,7 @@ const Checkout = function(props) {
                     <label>Delivery Address</label>
                     <input className="input-medium" {...bindform} />
                 </div>
-<<<<<<< HEAD
                 <Link to={"/thank-you-for-your-order"}>
-=======
-                <Link to="/thank-you-for-your-order">
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
                     <button className="checkout-btn" onClick={checkout.bind(this)}>Checkout</button>
                 </Link>
             </form>

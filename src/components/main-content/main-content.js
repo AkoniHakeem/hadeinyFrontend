@@ -1,11 +1,7 @@
 import './main-content.css'
 import { useState } from 'react'
 import Collection from '../collections/collections'
-<<<<<<< HEAD
 import useFetch from '../hooks/useFetchFrom'
-=======
-import useFetch from '../useFetchFrom'
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
 import { Route, Switch } from 'react-router-dom'
 import CollectionPage from '../collections/collectionPage'
 import ProductDetailsPage from '../collections/productDetailsPage/productDetailsPage'
@@ -18,19 +14,11 @@ import Login from '../authNav/login'
 
 const MainContent = (props) => {
     let requestUrl = config.hadeiny_BACKENDURL+"/api/v1/collections"
-<<<<<<< HEAD
     const options = {
         method: "GET"
     }
     const [collections, setCollections] = useState([])
         useFetch(requestUrl, options, (_collections) => {
-=======
-    const request = new Request(requestUrl, {
-        method: "GET"
-    })
-    const [collections, setCollections] = useState([])
-        useFetch(request, (_collections) => {
->>>>>>> e56cbabb493771e3d5d00bdd1d6bec948820c863
             console.log(_collections)
             setCollections(_collections)
         })
