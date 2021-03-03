@@ -1,0 +1,38 @@
+.collection {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 2rem ;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collectionCircle {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: #00A5E9;
+    text-decoration: none;
+    outline-offset: 1rem;
+    cursor: pointer;
+    display: block;
+    border: none;
+}
+
+.collectionImg {
+    width: 5rem;
+    height: 4rem;
+}
+
+.collectionName {
+    color: #050A30;
+    margin: 1rem;
+    position: relative;
+    bottom: .2rem;
+}
+
+.collection-page-product-button {
+    cursor: pointer;
+    text-decoration: none;
+}

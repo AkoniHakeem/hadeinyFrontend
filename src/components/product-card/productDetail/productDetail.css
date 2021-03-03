@@ -1,0 +1,13 @@
+.product-details {
+    color: var(--color);
+    font-weight: 400;
+    font-size: .8rem;
+    width: 100%
+}
+
+.product-price {
+    color: var(--color);
+    display: block;
+    margin: .5rem 0;
+    font-weight: bold;
+}
