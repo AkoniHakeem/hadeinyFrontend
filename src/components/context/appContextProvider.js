@@ -5,7 +5,7 @@ import { AppContext } from "./appContext";
 import UserReducer from "../Reducers/userReducer"
 const AppContextProvider = function (props){
     const cart_id = Date.now();
-    const [user, setUser] = useLocalStorageState("userData", {id: 0, firstname: "", lastname: "", token: ""})
+    const [user, setUser] = useLocalStorageState("userData", {_id: 0, firstname: "", lastname: "", token: ""})
     const [cart, setCart] = useLocalStorageState("cart", {cart_id: cart_id, user_id: user.id, count: 0,items: []});
     const [_cart, cartDispatch] = useReducer(CartReducer, cart);
     const [_user, userDispatch] = useReducer(UserReducer, user);

@@ -4,7 +4,7 @@ import { AppContext } from "../context/appContext"
 export function useAuth () {
     const userContext = useContext(AppContext).userContext;
     const user = userContext.user
-    const isAuthenticated = user._id === 0 ? false : true;
+    const isAuthenticated = !user || !user._id || user._id === 0 ? false : true;
     const setUser = (_user, token) => {
         userContext.userDispatch({type: "setUser", payload: {user: _user, token: token}})
     }
