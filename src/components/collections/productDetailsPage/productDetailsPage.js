@@ -24,7 +24,7 @@ const ProductDetailsPage = function () {
                 <img className="details-image" src={product.imageLocation} alt={productName}></img>
             </div>
             <div className="details-area">
-                <ProductDetail name={product.name} 
+                <ProductDetail style="product-details-2" name={product.name} 
                 price={product.price} 
                 description={product.description}/>
                 <div className="product-action-style" data-product-action-style="small"> 

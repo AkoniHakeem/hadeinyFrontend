@@ -27,6 +27,7 @@ const SideBar = forwardRef((props, ref) => {
                     <ul className="side-bar-list">
                         <li className="side-bar-list-item">Departments</li>
                         <li className="side-bar-list-item">Local Shops</li>
+                        <li className="side-bar-list-item">Sell</li>
                     </ul>
                 </div>
             </div>

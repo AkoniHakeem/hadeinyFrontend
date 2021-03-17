@@ -29,7 +29,7 @@ const CollectionPage = (props) => {
         <div className="product-container">
             {products.map(prod => {
                 //commune.subscribe(onAddToCartClicked);
-                return <ProductCard product={prod} productImage={prod.imageLocation} key={prod._id} productName={prod.name} productId={prod._id} productDescription={prod.description} productPrice={prod.price}/>
+                return <ProductCard  product={prod} productImage={prod.imageLocation} key={prod._id} productName={prod.name} productId={prod._id} productDescription={prod.description} productPrice={prod.price}/>
             })}
         </div>
     )

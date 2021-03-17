@@ -1,8 +1,23 @@
-.product-details {
+.product-details-1 {
     color: var(--color);
     font-weight: 400;
-    font-size: .8rem;
+    font-size: 0.8;
     width: 100%
+}
+
+.product-details-1 > label {
+    font-size: calc(var(--multiplier) * 0.5rem);
+}
+
+.product-details-2 {
+    color: var(--color);
+    font-weight: 400;
+    font-size: 0.8;
+    width: 100%
+}
+
+.product-details-2 > label {
+    font-size: calc(var(--multiplier) * 1rem);
 }
 
 .product-price {

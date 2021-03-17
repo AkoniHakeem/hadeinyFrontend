@@ -55,9 +55,9 @@
     width: 15.6rem;
 }
 
-.product-details > label {
+/* .product-details > label {
     font-size: calc(var(--multiplier) * 1rem);
-}
+} */
 
 /* .product-action-style {
 
