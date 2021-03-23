@@ -1,18 +1,21 @@
 .collection {
-    width: 12rem;
-    height: 12rem;
-    margin-top: 2rem ;
+    width: 22rem;
+    height: 15rem;
+    margin: .5rem 1.5rem ;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:rgb(245, 241, 254);
 }
+
+
 
 .collectionCircle {
     width: 9rem;
     height: 9rem;
-    border-radius: 50%;
-    background-color: #00A5E9;
+    border: none;
+    background-color: transparent;
     text-decoration: none;
     outline-offset: 1rem;
     cursor: pointer;
@@ -21,8 +24,8 @@
 }
 
 .collectionImg {
-    width: 5rem;
-    height: 4rem;
+    width: 10rem;
+    height: 8rem;
 }
 
 .collectionName {
@@ -36,3 +39,4 @@
     cursor: pointer;
     text-decoration: none;
 }
+

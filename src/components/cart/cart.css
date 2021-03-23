@@ -1,3 +1,25 @@
+.cart-card-shadowed {
+    color: var(--color);
+    width: calc(var(--multiplier)* 22rem);
+    box-shadow: .1rem 0 .4rem .4rem #a0aab8;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  
+  .cart-card-shadowed .opening-brief {
+    text-align: center;
+    position: relative;
+  }
+  
+  .cart-card-shadowed .opening-brief::after {
+      content: "";
+      width:  calc(var(--multiplier)* 22rem);;
+      height: .1rem;
+      position: absolute;
+      left: .25rem;;
+      background-color: var(--background-color);
+  }
+
 .cart-btn {
     color: whitesmoke;
     font-weight: 500;

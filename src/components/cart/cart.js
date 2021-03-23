@@ -26,7 +26,7 @@ const Cart = (props) => {
                 <div>
                     <h3>Please, review your cart items</h3>
                 </div>
-                <ul className="card-shadowed cart-list">
+                <ul className="cart-card-shadowed cart-list">
                 {
                     cartCount > 0 ? 
                     appContext.cartContext.cart.items.map(prodObject => {

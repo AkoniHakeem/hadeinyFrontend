@@ -11,6 +11,8 @@ import Checkout from '../cart/checkout'
 import Thanks from '../cart/thanks'
 import Signup from '../authNav/signup'
 import Login from '../authNav/login'
+import AddProduct from '../addProduct/addProduct'
+
 
 const MainContent = (props) => {
     let requestUrl = config.hadeiny_BACKENDURL+"/api/v1/collections"
@@ -23,13 +25,34 @@ const MainContent = (props) => {
             setCollections(_collections)
         })
 
-
     return(
         <div className="main-content">
+
             <Switch>
                 <Route exact path="/">
-                    {collections.map(c => {
-                    return <Collection key={c._id} name={c.name} imageUrl={c.image}/>})}
+                    <div className="carousel">
+                        <div className="carousel-wrapper">
+                            <div className="slide">
+                                <img  src="/banner1.jpg"/>
+                            </div>
+                            <div className="slide">
+                                <img  src="/banner3.jpg"/>
+                            </div>                   
+                             <div className="slide">
+                                <img src="/banner6.jpg"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="collection-wrapper">
+                        <div className="collection-header-wrapper">
+                            <h3 className="collection-header">Collections</h3>
+                        </div>
+                        <div className="collection-list-wrapper">
+                            {collections.map(c => {
+                            return <Collection key={c._id} name={c.name} imageUrl={c.image}/>})
+                            }
+                        </div>
+                    </div>
                 </Route>
                 {collections.map(c => {
                     return <Route exact key={c._id} path={`/${c.name}`}><CollectionPage/></Route>})}
@@ -56,6 +79,9 @@ const MainContent = (props) => {
                 </Route>
                 <Route path="/login">
                     <Login/>
+                </Route>
+                <Route path="/my-store/add-product">
+                    <AddProduct/>
                 </Route>
             </Switch>
         </div>

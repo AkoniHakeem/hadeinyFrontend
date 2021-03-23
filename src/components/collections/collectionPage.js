@@ -26,11 +26,14 @@ const CollectionPage = (props) => {
     //     console.log("add to cart clicked with the quantity - ", quantity)
     // }
     return(
-        <div className="product-container">
+        <div className="collection-page-wrapper">
+            <h3 className="collection-page-header">See more products from {path.substr(1)} collection</h3>
+            <div className="product-container">
             {products.map(prod => {
                 //commune.subscribe(onAddToCartClicked);
                 return <ProductCard  product={prod} productImage={prod.imageLocation} key={prod._id} productName={prod.name} productId={prod._id} productDescription={prod.description} productPrice={prod.price}/>
             })}
+        </div>
         </div>
     )
 }
